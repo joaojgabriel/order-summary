@@ -77,21 +77,25 @@ h1 {
   margin-top: calc(16rem + 11.59%); /* illustration height + ~38px */
 }
 
+p,
+.info span {
+  color: hsl(224, 23%, 55%);
+}
+
 p {
   margin: 7.32% 12.8%;
   line-height: 1.5;
-  color: hsl(224, 23%, 55%);
 }
 
 .plan {
   display: flex;
   align-items: center;
-  margin: 7.32% auto;
+  margin: calc(9.76% - 1.4rem - 7.32%) auto 7.32%;
   justify-content: space-between;
   background: url(images/icon-music.svg) no-repeat 7.32% center,
     hsl(225, 100%, 98%);
   padding: 7.32%;
-  width: calc(100% - 14.63%);
+  width: 85.37%;
   border-radius: 1.2rem;
   font-size: 1.4rem;
 }
