@@ -50,10 +50,7 @@ body {
   }
 }
 
-h2 {
-  font-size: 1em;
-}
-
+/* Main and Card */
 main {
   height: 100vh;
   display: flex;
@@ -78,13 +75,18 @@ h1 {
 }
 
 p,
-.info span {
+.info span,
+.cancel {
   color: hsl(224, 23%, 55%);
 }
 
 p {
   margin: 7.32% 12.8%;
   line-height: 1.5;
+}
+
+h2 {
+  font-size: 1em;
 }
 
 .plan {
@@ -103,3 +105,40 @@ p {
 .info {
   padding-left: calc(4.8rem + 5.03%);
 }
+
+/* Buttons */
+.change:hover,
+.proceed:hover,
+.cancel:hover {
+  cursor: pointer;
+}
+
+.change {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+
+.change:hover {
+  color: hsl(245, 83%, 68%);
+}
+
+.proceed {
+  color: white;
+  background: hsl(245, 75%, 52%);
+  width: 85.37%;
+  margin: 0 auto 8.54%;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 22px 16px rgba(114, 128, 167, 0.2);
+}
+
+.proceed:hover {
+  background: hsl(245, 83%, 68%);
+}
+
+.cancel {
+  width: max-content;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
